@@ -261,11 +261,53 @@ var Dialog = {
       if (linePicked === '3.0') {
         return Dialog.getNode('6');
       }
-
+      if (linePicked === '2.0')
+      {
+      	return Dialog.getNode('8');
+      }
       console.log(Dialog.getNode('5'));
       return Dialog.getNode('2');
     }
   }, {
+    id: '8',
+    speaker: 'page',
+    type: 'inactive',
+    lines: [
+      {text: "Por Favor, preciso de mais informações" },
+      {text: "O que está acontecendo?"}
+    ],
+    next: function (linePicked) {
+      return Dialog.getNode('5.2');
+    }
+  }, {
+    id: '5.2',
+    speaker: 'visitor',
+    type: 'interactive',
+    countPolicia: 0,
+    lines: [
+      { id: '1.0', text: "Nada, Foi Engano...." },
+      { id: '2.0', text: "Vou pegar mais informações" },
+      { id: '3.0', text: "Alguém foi raptado, eu sei o local" }
+    ],
+    next: function (linePicked) {
+      if (linePicked === '1.0') {
+        Dialog.getNode('5').countPolicia++;
+        if (Dialog.getNode('4').countMais === 0) {
+          return Dialog.getNode('20');
+        }
+        return Dialog.getNode('2');
+      }
+      if (linePicked === '3.0') {
+        return Dialog.getNode('6');
+      }
+      if (linePicked === '2.0')
+      {
+      	return Dialog.getNode('2');
+      }
+      console.log(Dialog.getNode('5'));
+      return Dialog.getNode('2');
+    }
+  },{
     id: '6',
     speaker: 'page',
     type: 'inactive',
