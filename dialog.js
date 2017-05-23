@@ -37,7 +37,7 @@ var Dialog = {
     type: 'inactive',
     lines: [
       { id: '0.0', text: " 'Salve-me', Clique para Jogar" },
-      { text: "Plot da História: Salvar uma Garota que foi raptada " },
+      { text: "Plot da História: Salvar uma Garota que foi raptada" },
       { text: "Basaedo nos jogos point-and-click" }
     ],
     next: function (linePicked) {
@@ -48,7 +48,7 @@ var Dialog = {
     speaker: 'page',
     type: 'inactive',
     lines: [
-      { id: '1.0', text: "Preciso da sua ajuda nao sei onde estou......escuto barulhos." },
+      { id: '1.0', text: "Preciso da sua ajuda não sei onde estou......escuto barulhos." },
       { text: "Está escuro.....frio....AJUDE-ME" },
     ],
     next: function (linePicked) {
@@ -61,7 +61,7 @@ var Dialog = {
     sabeNome: false,
     lines: [
       { id: '2.0', text: "Quem é você ?" },
-      { id: '2.1', text: "O que vc está escutando??" },
+      { id: '2.1', text: "O que você está escutando??" },
       { id: '2.2', text: "Vou ligar para a Polícia, fique calma!" }
     ],
     next: function (linePicked) {
@@ -98,7 +98,7 @@ var Dialog = {
     type: 'inactive',
     countMais: 0,
     lines: [
-      { text: "Escuto o Mar e Pessoas Andando, Muitas" },
+      { text: "Escuto o Mar e muitas pessoas andando" },
       { text: "Mas elas não me escutam!!" },
     ],
     next: function (linePicked) {
@@ -184,7 +184,7 @@ var Dialog = {
     type: 'inactive',
     count: 0,
     lines: [
-      { text: "Já, te Respondi......Por Favor Me Ajude" }
+      { text: "Já te Respondi......Por Favor Me Ajude" }
     ],
     next: function (linePicked) {
 
@@ -196,7 +196,7 @@ var Dialog = {
     type: 'inactive',
     count: 0,
     lines: [
-      { text: "Já, te Respondi......Por Favor Me Ajude" }
+      { text: "Já te Respondi......Por Favor Me Ajude" }
     ],
     next: function (linePicked) {
       Dialog.getNode('3.1').count++;
